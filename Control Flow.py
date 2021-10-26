@@ -15,8 +15,6 @@ lastName = input("What is your last name: ")
 
 print("\nWelcome to Cash-R-Us", firstName,lastName + " we will now set up a security PIN on your account.\n")
 
-# Set up a PIN - Personal Identification Number
-pin = input("Please choose a 4 digit PIN:")
 
 print("\nThank you",firstName + ", we see that you set your PIN to",pin)
 
