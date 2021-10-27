@@ -15,15 +15,27 @@ lastName = input("What is your last name: ")
 
 print("\nWelcome to Cash-R-Us", firstName,lastName + " we will now set up a security PIN on your account.\n")
 
+pin = input("please choose a 4 digit security pin: ")
 
 print("\nThank you",firstName + ", we see that you set your PIN to",pin)
 
-print("\nwould you like to make a transaction through our automated teller machine.")
+print("\nWould you like to make a transaction through our automated teller machine.")
 atm = input("Yes or No: ").upper()
 
 if atm == "YES":
     print("\n-----------------------------------------------------------------------------------------------------\n")
 
+    # This part of the program will be asking users to complete a transcription through the ATM
+    print("Please insert your ATM card\n")
+    print("Welcome to Cash-R-Us ATM",firstName,lastName)
+    userPIN = input("What is your 4 digit PIN: ")
 
+    if pin == userPIN:
+        balance = 674
+        print("\nYour Balance: $" + str(balance))
+
+
+
+    else: print("\nSorry",firstName,lastName,"incorect PIN")
 else:
     print("\nHave a wonderful day" ,firstName, lastName + ", please come back and visit us soon.")
