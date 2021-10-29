@@ -40,6 +40,14 @@ if atm == "YES":
             wAmount = int(input("Enter amount you wish to withdrawl: "))
             balance = balance - wAmount
             print("Your new balance is: $" + str(balance))
+        elif typeOfTransaction == "d":
+            dAmount = int(input("Enter amount you wish to withdrawl: "))
+            balance = balance + dAmount
+            print("Your new balance is: $" + str(balance))
+
+        else:
+            print("your current balance is: $" + str(balance))
+
 
 
 
